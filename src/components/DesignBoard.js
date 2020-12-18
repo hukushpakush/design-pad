@@ -1,21 +1,18 @@
-import React from 'react';
+import React from "react";
+import "./DesignPad";
+import DesignPad from "./DesignPad";
 
-function DesignBoard(){
-    return(
-        <div>
-        <h1 className="container-header">Design Pad</h1>
-        <button className="container-button">Edit</button>
-        </div>
-
+class DesignBoard extends React.Component {
+  render() {
+    return (
+      <div className="pad-container">
+        <DesignPad />
+        <DesignPad />
+        <DesignPad />
+        <DesignPad />
+      </div>
     );
-
- 
-    
-
-
+  }
 }
 
 export default DesignBoard;
-
-
-
